@@ -1,3 +1,21 @@
+# CoffeShop
+
+
+[CoffeShop](https://coffe-shop-sand.vercel.app)
+
+## Technology used:
+* React
+* TypeScript
+* Redux Toolkit
+* React Router
+* React Hooks
+* CSS-Modules
+
+![image](https://github.com/StarKingdom-Front/CoffeShop/assets/106761534/b1acf35a-9c50-48af-b547-9305e9e5d41c)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
