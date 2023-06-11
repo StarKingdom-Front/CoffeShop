@@ -1,0 +1,10 @@
+.pleasure__body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 260px;
+}
+
+.pleasure__body {
+    background-image: url(../../resources/img/pleasure-bg.png);
+}
+

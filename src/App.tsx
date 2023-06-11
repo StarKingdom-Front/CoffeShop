@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Footer from './layout/Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import OurCoffe from './pages/OurCoffe/OurCoffe';
+import Pleasure from './pages/Pleasure/Pleasure';
+import NotFound from './pages/NotFound/NotFound';
+import CardSingle from './components/CardSingle/CardSingle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/our-coffee" element={<OurCoffe />} />
+          <Route path="/for-your-pleasure" element={<Pleasure />} />
+          <Route path="/coffe/:id" element={<CardSingle />} />
+          <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
